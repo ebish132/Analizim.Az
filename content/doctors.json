@@ -1,0 +1,28 @@
+{
+  "doctors": [
+    {
+      "name": "Həkim Adı Soyadı",
+      "specialty": "Terapevt",
+      "experience": "10+ il təcrübə",
+      "photo": ""
+    },
+    {
+      "name": "Həkim Adı Soyadı",
+      "specialty": "Kardioloq",
+      "experience": "8+ il təcrübə",
+      "photo": ""
+    },
+    {
+      "name": "Həkim Adı Soyadı",
+      "specialty": "Endokrinoloq",
+      "experience": "12+ il təcrübə",
+      "photo": ""
+    },
+    {
+      "name": "Həkim Adı Soyadı",
+      "specialty": "Radioloq",
+      "experience": "7+ il təcrübə",
+      "photo": ""
+    }
+  ]
+}

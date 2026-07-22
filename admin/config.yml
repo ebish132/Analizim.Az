@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: master
+
+local_backend: true
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "doctors"
+    label: "Həkimlər"
+    files:
+      - file: "content/doctors.json"
+        label: "Həkimlər siyahısı"
+        name: "doctors"
+        fields:
+          - label: "Həkimlər"
+            name: "doctors"
+            widget: "list"
+            summary: "{{name}} — {{specialty}}"
+            fields:
+              - { label: "Ad Soyad", name: "name", widget: "string" }
+              - { label: "İxtisas", name: "specialty", widget: "string" }
+              - { label: "Təcrübə", name: "experience", widget: "string" }
+              - { label: "Şəkil", name: "photo", widget: "image", required: false }
+
+  - name: "blog"
+    label: "Bloq / Elanlar"
+    files:
+      - file: "content/blog.json"
+        label: "Bloq yazıları"
+        name: "posts"
+        fields:
+          - label: "Yazılar"
+            name: "posts"
+            widget: "list"
+            summary: "{{title}} — {{date}}"
+            fields:
+              - { label: "Başlıq", name: "title", widget: "string" }
+              - { label: "Tarix", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+              - { label: "Xülasə", name: "excerpt", widget: "text" }
+              - { label: "Şəkil", name: "image", widget: "image", required: false }
