@@ -1,0 +1,28 @@
+{
+  "services": [
+    { "section": "lab", "icon": "flask", "title": "Biokimyəvi analizlər", "description": "Qaraciyər, böyrək funksiyaları, qlükoza, lipid profili və digər əsas göstəricilər." },
+    { "section": "lab", "icon": "users", "title": "Hormonal analizlər", "description": "Qalxanabənzər vəzi, reproduktiv və digər hormon göstəricilərinin ölçülməsi." },
+    { "section": "lab", "icon": "award", "title": "Hematologiya", "description": "Qanın ümumi analizi, laxtalanma göstəriciləri və digər hematoloji müayinələr." },
+    { "section": "lab", "icon": "liver", "title": "Qaraciyər funksiya testləri", "description": "ALT, AST, QQT, Ümumi Bilirubin, Albumin, Ümumi Zülal göstəriciləri." },
+
+    { "section": "panels", "icon": "droplet", "title": "Lipid profili", "description": "Xolesterin, LDL, HDL və Treqliserid göstəricilərinin ölçülməsi." },
+    { "section": "panels", "icon": "shield", "title": "Hepatit markerləri", "description": "Hepatit B və Hepatit C infeksiyalarının laborator müayinəsi." },
+    { "section": "panels", "icon": "sun", "title": "Vitamin və mineral testləri", "description": "Vitamin D, Kalsium və digər mikroelement göstəricilərinin analizi." },
+    { "section": "panels", "icon": "droplet", "title": "Sidik və nəcis analizi", "description": "Sidiyin ümumi analizi və nəcis müayinəsi ilə orqanizmin ümumi vəziyyətinin qiymətləndirilməsi." },
+    { "section": "panels", "icon": "flask", "title": "Qanda şəkər", "description": "Qlükoza göstəricisinin ölçülməsi ilə şəkərli diabet riskinin qiymətləndirilməsi." },
+    { "section": "panels", "icon": "clock", "title": "Laxtalanma testləri", "description": "Protrombin indeksi və digər qan laxtalanma göstəricilərinin müayinəsi." },
+
+    { "section": "diagnostic", "icon": "mri", "title": "MRT (Maqnit Rezonans Tomoqrafiya)", "description": "Yüksək dəqiqlikli görüntüləmə ilə orqan və toxumaların ətraflı müayinəsi." },
+    { "section": "diagnostic", "icon": "ct", "title": "KT (Kompüter Tomoqrafiya)", "description": "Sürətli və dəqiq kəsik görüntüləmə texnologiyası ilə müayinə." },
+    { "section": "diagnostic", "icon": "waveform", "title": "USM (Ultrasəs Müayinə)", "description": "Qarın boşluğu, qalxanabənzər vəzi, ürək və digər orqanların ultrasəs diaqnostikası." },
+    { "section": "diagnostic", "icon": "scan", "title": "Rentgen", "description": "Sürətli rentgenoqrafiya müayinəsi ilə sümük və ağciyər patologiyalarının aşkarlanması." },
+
+    { "section": "cardio", "icon": "heart", "title": "EKQ (Elektrokardioqramma)", "description": "Ürəyin elektrik fəaliyyətinin qeydə alınması ilə ritm və funksiya qiymətləndirilməsi." },
+    { "section": "cardio", "icon": "stethoscope", "title": "EXO (Exokardioqrafiya)", "description": "Ürək əzələsi və qapaqcıqların ultrasəs vasitəsilə ətraflı müayinəsi." },
+    { "section": "cardio", "icon": "clock", "title": "Kardioloji Check-up", "description": "Ürək-damar sisteminin kompleks yoxlanılması üçün hazırlanmış müayinə paketi." },
+
+    { "section": "pediatric", "icon": "smiley", "title": "Pediatr müayinəsi", "description": "Uşaq həkimi tərəfindən ümumi sağlamlıq və inkişaf yoxlanışı." },
+    { "section": "pediatric", "icon": "flask", "title": "Uşaq laborator analizləri", "description": "Qanın ümumi analizi, Kalsium, Vitamin D və digər pediatrik göstəricilər." },
+    { "section": "pediatric", "icon": "waveform", "title": "Uşaq USM müayinəsi", "description": "Tam qarın boşluğunun ultrasəs müayinəsi ilə erkən diaqnostika." }
+  ]
+}

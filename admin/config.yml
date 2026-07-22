@@ -71,3 +71,77 @@ collections:
               - { label: "Tarix", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
               - { label: "Xülasə", name: "excerpt", widget: "text" }
               - { label: "Şəkil", name: "image", widget: "image", required: false }
+
+  - name: "services"
+    label: "Xidmətlər"
+    files:
+      - file: "content/services.json"
+        label: "Xidmətlər siyahısı"
+        name: "services"
+        fields:
+          - label: "Xidmətlər"
+            name: "services"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - label: "Bölmə"
+                name: "section"
+                widget: "select"
+                options:
+                  - { label: "Laborator xidmətlər (Qan analizləri)", value: "lab" }
+                  - { label: "Xüsusi laborator panellər", value: "panels" }
+                  - { label: "Diaqnostik xidmətlər (Görüntüləmə)", value: "diagnostic" }
+                  - { label: "Kardioloji xidmətlər", value: "cardio" }
+                  - { label: "Pediatriya", value: "pediatric" }
+              - label: "İkon"
+                name: "icon"
+                widget: "select"
+                options:
+                  - { label: "Kolba (analiz)", value: "flask" }
+                  - { label: "İnsanlar (hormon)", value: "users" }
+                  - { label: "Medal (hematologiya)", value: "award" }
+                  - { label: "Qaraciyər", value: "liver" }
+                  - { label: "Damla", value: "droplet" }
+                  - { label: "Qalxan (hepatit)", value: "shield" }
+                  - { label: "Günəş (vitamin)", value: "sun" }
+                  - { label: "Saat", value: "clock" }
+                  - { label: "MRT", value: "mri" }
+                  - { label: "KT", value: "ct" }
+                  - { label: "Dalğa (USM)", value: "waveform" }
+                  - { label: "Rentgen", value: "scan" }
+                  - { label: "Ürək", value: "heart" }
+                  - { label: "Stetoskop", value: "stethoscope" }
+                  - { label: "Uşaq (gülən üz)", value: "smiley" }
+              - { label: "Başlıq", name: "title", widget: "string" }
+              - { label: "Açıqlama", name: "description", widget: "text" }
+
+  - name: "packages"
+    label: "Paketlər"
+    files:
+      - file: "content/packages.json"
+        label: "Check-Up paketləri"
+        name: "packages"
+        fields:
+          - label: "Paketlər"
+            name: "packages"
+            widget: "list"
+            summary: "{{title}} — {{new_price}}"
+            fields:
+              - { label: "Kateqoriya etiketi", name: "tag", widget: "string" }
+              - { label: "Paket adı", name: "title", widget: "string" }
+              - { label: "Alt başlıq", name: "subtitle", widget: "string" }
+              - { label: "Daxil olanlar (sətir-sətir)", name: "items", widget: "list", field: { label: "Maddə", name: "item", widget: "string" } }
+              - { label: "Köhnə qiymət", name: "old_price", widget: "string", hint: "Məs. 230 AZN" }
+              - { label: "Yeni qiymət", name: "new_price", widget: "string", hint: "Məs. 85 AZN" }
+              - { label: "Endirim nişanı", name: "discount", widget: "string", hint: "Məs. -63%", required: false }
+              - { label: "Seçilmiş paket (rəngli çərçivə)", name: "featured", widget: "boolean", default: false }
+
+  - name: "homepage"
+    label: "Ana səhifə şəkilləri"
+    files:
+      - file: "content/homepage.json"
+        label: "Ana səhifə şəkilləri"
+        name: "homepage"
+        fields:
+          - { label: "Hero şəkli (yuxarıda, sağda)", name: "hero_image", widget: "image", required: false }
+          - { label: "Haqqımızda bölməsi şəkli", name: "about_image", widget: "image", required: false }

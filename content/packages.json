@@ -1,0 +1,69 @@
+{
+  "packages": [
+    {
+      "tag": "Pediatriya",
+      "title": "Pediatrik Check-Up Paketi",
+      "subtitle": "Uşaqlar üçün hərtərəfli sağlamlıq yoxlanışı",
+      "items": [
+        "Pediatr müayinəsi",
+        "Qanın ümumi analizi",
+        "Sidik + nəcis analizi",
+        "Kalsium",
+        "Vitamin D",
+        "Tam qarın boşluğu USM"
+      ],
+      "old_price": "230 AZN",
+      "new_price": "85 AZN",
+      "discount": "-63%",
+      "featured": false
+    },
+    {
+      "tag": "Kardiologiya",
+      "title": "Kardioloji Check-Up",
+      "subtitle": "Ürək-damar sisteminin kompleks yoxlanılması",
+      "items": [
+        "Həkim Kardioloq qəbulu və müalicəsi",
+        "EXO (Exokardioqrafiya)",
+        "Qanın ümumi analizi",
+        "Xolesterin, LDL, HDL, Treqliserid",
+        "Tam USM müayinə (qarın boşluğu, sidik-tənasül sistemi, qalxanabənzər vəz, limfa düyünləri)"
+      ],
+      "old_price": "387 AZN",
+      "new_price": "95 AZN",
+      "discount": "-75%",
+      "featured": true
+    },
+    {
+      "tag": "Qaraciyər sağlamlığı",
+      "title": "Qaraciyər Paketi",
+      "subtitle": "Qaraciyər funksiyalarının hərtərəfli qiymətləndirilməsi",
+      "items": [
+        "Həkim Terapevt qəbulu",
+        "Qaraciyər ferment testləri (ALT, AST, QQT, Bilirubin, Albumin, Ümumi Zülal)",
+        "Hepatit B və Hepatit C testləri",
+        "Tam USM müayinə (qarın boşluğu, sidik-tənasül sistemi, qalxanabənzər vəz, limfa düyünləri)"
+      ],
+      "old_price": "298 AZN",
+      "new_price": "95 AZN",
+      "discount": "-68%",
+      "featured": false
+    },
+    {
+      "tag": "Ümumi sağlamlıq",
+      "title": "Full Check-Up Terapevtik",
+      "subtitle": "Orqanizmin bütün əsas göstəricilərinin yoxlanılması",
+      "items": [
+        "Terapevt müayinəsi",
+        "Qanın və sidiyin ümumi analizi",
+        "Qanda şəkər, Vitamin D, Xolesterol, ALT, AST, QQT, Kreatin",
+        "Protrombin indeksi (laxtalanma göstəricisi)",
+        "EXO və Rentgen",
+        "Tam USM müayinə (qarın boşluğu, qalxanabənzər vəz, limfa düyünləri)"
+      ],
+      "old_price": "402 AZN",
+      "new_price": "90 AZN",
+      "discount": "-78%",
+      "featured": false
+    }
+  ]
+}

@@ -13,12 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ===== Package card links -> store choice before navigating =====
-  document.querySelectorAll(".package-card a.btn-primary").forEach(function (link) {
-    link.addEventListener("click", function () {
-      var packageName = link.closest(".package-card").querySelector("h3").textContent.trim();
-      sessionStorage.setItem("selectedPackage", packageName);
-    });
+  // ===== Package card links -> store choice before navigating (delegated: cards may be rendered dynamically) =====
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest(".package-card a.btn-primary");
+    if (!link) return;
+    var card = link.closest(".package-card");
+    var heading = card && card.querySelector("h3");
+    if (heading) sessionStorage.setItem("selectedPackage", heading.textContent.trim());
   });
 
   // ===== Preselect service/package (from sessionStorage, or ?paket= URL param) =====
