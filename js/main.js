@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      var whatsappNumber = "994505286445"; // 010 528 64 45
+      var whatsappNumber = "994105286445"; // 010 528 64 45
 
       var name = form.querySelector("#res-name").value.trim();
       var phone = form.querySelector("#res-phone").value.trim();
