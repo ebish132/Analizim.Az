@@ -82,6 +82,15 @@ document.addEventListener("DOMContentLoaded", function () {
       var successBox = document.getElementById("form-success");
       if (successBox) successBox.classList.add("show");
 
+      var toast = document.getElementById("reservation-toast");
+      if (toast) {
+        toast.classList.add("show");
+        clearTimeout(toast._hideTimer);
+        toast._hideTimer = setTimeout(function () {
+          toast.classList.remove("show");
+        }, 6000);
+      }
+
       window.open(url, "_blank");
       form.reset();
     });

@@ -111,7 +111,12 @@
 
       <div class="form-card" id="reservation-form-wrapper">
         <h3 style="font-size:20px; margin-bottom:6px;">Onlayn Rezervasiya</h3>
-        <p style="font-size:13.5px; color:var(--color-text-light); margin-bottom:24px;">Formu doldurun, "Rezerv et" düyməsinə basdıqda məlumatlarınız avtomatik WhatsApp-a göndəriləcək.</p>
+        <p style="font-size:13.5px; color:var(--color-text-light); margin-bottom:18px;">Formu doldurun, "Rezerv et" düyməsinə basdıqda məlumatlarınız avtomatik WhatsApp-a göndəriləcək.</p>
+
+        <div class="form-alert">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+          <span><strong>Diqqət:</strong> Zəhmət olmasa analizə gəlmədən əvvəl ac qarnına gəlin.</span>
+        </div>
 
         <form id="reservation-form">
           <div class="form-row">
@@ -233,6 +238,16 @@
 <a href="https://wa.me/994105286445" target="_blank" class="float-whatsapp" aria-label="WhatsApp ilə yazın">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.1L2 22l5.1-1.6A11 11 0 1 0 20.5 3.5z"/></svg>
 </a>
+
+<div class="toast-notification" id="reservation-toast" role="status" aria-live="polite">
+  <div class="toast-icon">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+  </div>
+  <div class="toast-text">
+    <strong>Rezervasiya tamamlandı!</strong>
+    <span>WhatsApp pəncərəsində mesajı göndərməyi unutmayın. Analizə ac qarnına gəlməyi unutmayın.</span>
+  </div>
+</div>
 
 <script src="js/main.js"></script>
 </body>
