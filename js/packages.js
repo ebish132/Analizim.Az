@@ -23,9 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
             .join("");
           var cardClass = "package-card" + (pkg.featured ? " featured" : "");
           var reserveUrl = "elaqe.html?paket=" + encodeURIComponent(pkg.title) + "#reservation-form";
+          var imageHtml = pkg.image
+            ? '<div class="package-image"><img src="' + escapeHtml(pkg.image) + '" alt="' + escapeHtml(pkg.title) + '" loading="lazy"></div>'
+            : "";
           return (
             '<div class="' + cardClass + '">' +
             (pkg.discount ? '<div class="package-badge">' + escapeHtml(pkg.discount) + "</div>" : "") +
+            imageHtml +
             '<div class="package-header">' +
             '<span class="section-tag">' + escapeHtml(pkg.tag) + "</span>" +
             "<h3>" + escapeHtml(pkg.title) + "</h3>" +

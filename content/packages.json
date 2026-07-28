@@ -4,6 +4,7 @@
       "tag": "Pediatriya",
       "title": "Pediatrik Check-Up Paketi",
       "subtitle": "Uşaqlar üçün hərtərəfli sağlamlıq yoxlanışı",
+      "image": "images/paket-pediatrik.jpg",
       "items": [
         "Pediatr müayinəsi",
         "Qanın ümumi analizi",
@@ -21,6 +22,7 @@
       "tag": "Kardiologiya",
       "title": "Kardioloji Check-Up",
       "subtitle": "Ürək-damar sisteminin kompleks yoxlanılması",
+      "image": "images/paket-kardioloji.jpg",
       "items": [
         "Həkim Kardioloq qəbulu və müalicəsi",
         "EXO (Exokardioqrafiya)",
@@ -37,6 +39,7 @@
       "tag": "Qaraciyər sağlamlığı",
       "title": "Qaraciyər Paketi",
       "subtitle": "Qaraciyər funksiyalarının hərtərəfli qiymətləndirilməsi",
+      "image": "images/paket-qaraciyer.jpg",
       "items": [
         "Həkim Terapevt qəbulu",
         "Qaraciyər ferment testləri (ALT, AST, QQT, Bilirubin, Albumin, Ümumi Zülal)",
@@ -52,6 +55,7 @@
       "tag": "Ümumi sağlamlıq",
       "title": "Full Check-Up Terapevtik",
       "subtitle": "Orqanizmin bütün əsas göstəricilərinin yoxlanılması",
+      "image": "images/paket-full-checkup.jpg",
       "items": [
         "Terapevt müayinəsi",
         "Qanın və sidiyin ümumi analizi",
@@ -60,9 +64,9 @@
         "EXO və Rentgen",
         "Tam USM müayinə (qarın boşluğu, qalxanabənzər vəz, limfa düyünləri)"
       ],
-      "old_price": "402 AZN",
+      "old_price": "599 AZN",
       "new_price": "90 AZN",
-      "discount": "-78%",
+      "discount": "-85%",
       "featured": false
     }
   ]

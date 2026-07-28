@@ -399,6 +399,14 @@ h1, h2, h3, h4 {
   padding: 6px 14px;
   border-radius: 999px;
 }
+.package-image {
+  margin: -32px -28px 20px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--color-bg-alt);
+}
+.package-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .package-header { margin-bottom: 20px; }
 .package-header .section-tag { margin-bottom: 8px; }
 .package-card h3 { font-size: 20px; margin-bottom: 4px; }

@@ -127,6 +127,7 @@ collections:
             widget: "list"
             summary: "{{title}} — {{new_price}}"
             fields:
+              - { label: "Şəkil", name: "image", widget: "image", required: false }
               - { label: "Kateqoriya etiketi", name: "tag", widget: "string" }
               - { label: "Paket adı", name: "title", widget: "string" }
               - { label: "Alt başlıq", name: "subtitle", widget: "string" }
