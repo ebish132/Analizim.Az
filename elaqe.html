@@ -170,8 +170,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.1L2 22l5.1-1.6A11 11 0 1 0 20.5 3.5z"/></svg>
             Rezerv et
           </button>
-          <p class="form-note">Düyməyə basdıqda WhatsApp açılacaq və məlumatlarınız avtomatik doldurulacaq.</p>
-          <div class="form-success" id="form-success">✓ Məlumatlarınız hazırlandı, WhatsApp pəncərəsində göndərməyi təsdiqləyin.</div>
+          <p class="form-note">Düyməyə basdıqda rezervasiyanız tamamlanacaq və WhatsApp-a keçid təklif olunacaq.</p>
         </form>
       </div>
 
@@ -239,13 +238,22 @@
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.1L2 22l5.1-1.6A11 11 0 1 0 20.5 3.5z"/></svg>
 </a>
 
-<div class="toast-notification" id="reservation-toast" role="status" aria-live="polite">
-  <div class="toast-icon">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-  </div>
-  <div class="toast-text">
-    <strong>Rezervasiya tamamlandı!</strong>
-    <span>WhatsApp pəncərəsində mesajı göndərməyi unutmayın. Analizə ac qarnına gəlməyi unutmayın.</span>
+<div class="reservation-modal-overlay" id="reservation-modal-overlay">
+  <div class="reservation-modal">
+    <div class="modal-icon">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <h3>Qeydiyyatınız uğurla tamamlandı!</h3>
+    <p>Zəhmət olmasa rezervasiya etdiyiniz vaxtda klinikada olun.</p>
+    <div class="modal-note">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+      <span>Analizə gəlmədən əvvəl ac qarnına gəlin.</span>
+    </div>
+    <button type="button" class="btn btn-whatsapp btn-block" id="modal-whatsapp-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.1L2 22l5.1-1.6A11 11 0 1 0 20.5 3.5z"/></svg>
+      WhatsApp-a keç
+    </button>
+    <button type="button" class="modal-close" id="modal-close-btn" aria-label="Bağla">✕</button>
   </div>
 </div>
 

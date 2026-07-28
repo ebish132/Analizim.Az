@@ -79,20 +79,36 @@ document.addEventListener("DOMContentLoaded", function () {
       var message = encodeURIComponent(lines.join("\n"));
       var url = "https://wa.me/" + whatsappNumber + "?text=" + message;
 
-      var successBox = document.getElementById("form-success");
-      if (successBox) successBox.classList.add("show");
-
-      var toast = document.getElementById("reservation-toast");
-      if (toast) {
-        toast.classList.add("show");
-        clearTimeout(toast._hideTimer);
-        toast._hideTimer = setTimeout(function () {
-          toast.classList.remove("show");
-        }, 6000);
+      var overlay = document.getElementById("reservation-modal-overlay");
+      if (overlay) {
+        overlay.dataset.whatsappUrl = url;
+        overlay.classList.add("show");
       }
 
-      window.open(url, "_blank");
       form.reset();
+    });
+  }
+
+  // ===== Reservation success modal -> proceed to WhatsApp / close =====
+  var modalOverlay = document.getElementById("reservation-modal-overlay");
+  if (modalOverlay) {
+    var goToWhatsapp = document.getElementById("modal-whatsapp-btn");
+    var closeModal = document.getElementById("modal-close-btn");
+
+    if (goToWhatsapp) {
+      goToWhatsapp.addEventListener("click", function () {
+        var url = modalOverlay.dataset.whatsappUrl;
+        if (url) window.open(url, "_blank");
+        modalOverlay.classList.remove("show");
+      });
+    }
+    if (closeModal) {
+      closeModal.addEventListener("click", function () {
+        modalOverlay.classList.remove("show");
+      });
+    }
+    modalOverlay.addEventListener("click", function (e) {
+      if (e.target === modalOverlay) modalOverlay.classList.remove("show");
     });
   }
 
