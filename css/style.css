@@ -482,6 +482,8 @@ h1, h2, h3, h4 {
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form-group { margin-bottom: 18px; }
 .form-group label { display: block; font-size: 13.5px; font-weight: 600; color: var(--color-dark); margin-bottom: 7px; }
+.field-hint { display: block; font-size: 12px; color: var(--color-text-light); margin-top: 6px; }
+.field-error { display: block; font-size: 12px; color: #C0392B; margin-top: 6px; }
 .form-group input,
 .form-group select,
 .form-group textarea {

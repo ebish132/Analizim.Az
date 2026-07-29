@@ -118,7 +118,7 @@
           <span><strong>Diqqət:</strong> Zəhmət olmasa analizə gəlmədən əvvəl ac qarnına gəlin.</span>
         </div>
 
-        <form id="reservation-form">
+        <form id="reservation-form" novalidate>
           <div class="form-row">
             <div class="form-group">
               <label for="res-name">Ad Soyad *</label>
@@ -157,7 +157,8 @@
             </div>
             <div class="form-group">
               <label for="res-time">Tərcih edilən vaxt</label>
-              <input type="time" id="res-time" name="time">
+              <input type="time" id="res-time" name="time" min="08:00" max="14:00" step="900">
+              <span class="field-hint">Qəbul saatları: 08:00 – 14:00 (Bakı vaxtı)</span>
             </div>
           </div>
 

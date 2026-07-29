@@ -54,12 +54,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var whatsappNumber = "994105286445"; // 010 528 64 45
 
-      var name = form.querySelector("#res-name").value.trim();
-      var phone = form.querySelector("#res-phone").value.trim();
+      var nameField = form.querySelector("#res-name");
+      var phoneField = form.querySelector("#res-phone");
+      var timeField = form.querySelector("#res-time");
+      var name = nameField.value.trim();
+      var phone = phoneField.value.trim();
       var service = form.querySelector("#res-service").value;
       var date = form.querySelector("#res-date").value;
-      var time = form.querySelector("#res-time").value;
+      var time = timeField.value;
       var note = form.querySelector("#res-note").value.trim();
+
+      form.querySelectorAll(".field-error").forEach(function (el) { el.remove(); });
+
+      function showFieldError(field, message) {
+        var errorEl = document.createElement("span");
+        errorEl.className = "field-error";
+        errorEl.textContent = message;
+        field.insertAdjacentElement("afterend", errorEl);
+        return field;
+      }
+
+      var firstInvalid = null;
+      if (!name) {
+        showFieldError(nameField, "Zəhmət olmasa adınızı daxil edin.");
+        firstInvalid = firstInvalid || nameField;
+      }
+      if (!phone) {
+        showFieldError(phoneField, "Zəhmət olmasa telefon nömrənizi daxil edin.");
+        firstInvalid = firstInvalid || phoneField;
+      }
+      if (time && (time < "08:00" || time > "14:00")) {
+        showFieldError(timeField, "Klinika yalnız 08:00 – 14:00 arası pasient qəbul edir. Zəhmət olmasa bu aralıqda vaxt seçin.");
+        firstInvalid = firstInvalid || timeField;
+      }
+
+      if (firstInvalid) {
+        firstInvalid.focus();
+        return;
+      }
 
       var dateTime = [date, time].filter(Boolean).join(" ");
 
