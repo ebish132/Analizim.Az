@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://analizim.az/sitemap.xml
